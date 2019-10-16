@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>KD8UBL pi2 Statistics</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="seasons.css"/>
+    <script src="seasons.js"></script>
+    <style>
+#statistics_widget th {
+  font-weight: normal;
+  text-align: right;
+}
+#statistics_widget .widget_title {
+  margin-bottom: 25px;
+}
+#statistics_widget .label {
+  font-size: 100%;
+}
+#statistics_widget .data {
+  text-align: right;
+  font-size: 100%;
+  padding-left: 50px;
+}
+#statistics_widget .units {
+  font-size: 100%;
+}
+#statistics_widget .timestamp {
+  color: var(--timestamp-color);
+}
+    </style>
+  </head>
+
+  <body>
+
+<div id="title_bar">
+  <div id="title">
+    <h1 class="page_title">KD8UBL pi2</h1>
+    <p class="lastupdate">10/15/2019 09:25:00 PM</p>
+  </div>
+  <div id="rss_link"><a href="rss.xml">RSS</a></div>
+  <div id="reports">
+    Monthly Reports:
+    <select name="reports" onchange="openTabularFile(value)">
+      <option value="2019-10">2019-10</option>
+      <option selected>- Select Month -</option>
+    </select>
+    <br/>
+    Yearly Reports:
+    <select name="reports" onchange="openTabularFile(value)">
+      <option value="2019">2019</option>
+      <option selected>- Select Year -</option>
+    </select>
+    <br/>
+  </div>
+</div>
+    
+    <div id="contents">
+      <p><a href="index.html">&#10096; Current Conditions</a></p>
+
+      <div id="widget_group">
+
+
+<div id="statistics_widget" class="widget">
+  <div class="widget_title">
+    Statistics
+  </div>
+  <div class="widget_contents">
+
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <th>Today</th>
+          <th class="hilo_week">Week</th>
+          <th class="hilo_month">Month</th>
+          <th class="hilo_year">Year</th>
+          <th class="hilo_rainyear">Rain year</th>
+        </tr>
+        <tr>
+          <td class="label">Outside Temperature</td>
+          <td class="units">&#176;F</td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">07:48:38 PM</span><br/>
+            30.9<br/>
+            <span class="timestamp">09:24:58 PM</span>
+          </td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span><br/>
+            30.9<br/>
+            <span class="timestamp">09:24:58 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            30.9<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            30.9<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            30.9<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Heat Index</td>
+          <td class="units">&#176;F</td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">07:48:38 PM</span>
+          </td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">32.7<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Wind Chill</td>
+          <td class="units">&#176;F</td>
+          <td class="data new_row">30.9<br/>
+            <span class="timestamp">09:24:58 PM</span>
+          </td>
+          <td class="data new_row">30.9<br/>
+            <span class="timestamp">09:24:58 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">30.9<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">30.9<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">30.9<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Dew Point</td>
+          <td class="units">&#176;F</td>
+          <td class="data new_row">27.2<br/>
+            <span class="timestamp">07:48:38 PM</span><br/>
+            25.4<br/>
+            <span class="timestamp">09:24:58 PM</span>
+          </td>
+          <td class="data new_row">27.2<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span><br/>
+            25.4<br/>
+            <span class="timestamp">09:24:58 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">27.2<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            25.4<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">27.2<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            25.4<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">27.2<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            25.4<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Humidity</td>
+          <td class="units">%</td>
+          <td class="data new_row">80<br/>
+            <span class="timestamp">07:48:38 PM</span><br/>
+            80<br/>
+            <span class="timestamp">09:24:58 PM</span>
+          </td>
+          <td class="data new_row">80<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span><br/>
+            80<br/>
+            <span class="timestamp">09:24:58 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">80<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            80<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">80<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            80<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">80<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            80<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Barometer</td>
+          <td class="units"> inHg</td>
+          <td class="data new_row">31.100<br/>
+            <span class="timestamp">07:48:38 PM</span><br/>
+            31.094<br/>
+            <span class="timestamp">09:24:58 PM</span>
+          </td>
+          <td class="data new_row">31.100<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span><br/>
+            31.094<br/>
+            <span class="timestamp">09:24:58 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">31.100<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            31.094<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">31.100<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            31.094<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">31.100<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            31.094<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Rain</td>
+          <td class="units"> in</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.00</td>
+          <td class="data new_row">0.00</td>
+        </tr>
+        <tr>
+          <td class="label">Rain Rate</td>
+          <td class="units"> in/hr</td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0.00<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Wind Max</td>
+          <td class="units">
+             mph<br/>
+            &#176;
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359<br/>
+            <span class="timestamp">09:24:58 PM</span>
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359<br/>
+            <span class="timestamp">09:24:58 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359<br/>
+            <span class="timestamp">10/15/2019 09:24:58 PM</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Wind Average</td>
+          <td class="units"> mph</td>
+          <td class="data new_row">
+            0</td>
+          <td class="data new_row">
+            0</td>
+          <td class="data new_row">
+            0</td>
+          <td class="data new_row">
+            0</td>
+          <td class="data new_row">
+            0</td>
+        </tr>
+        <tr>
+          <td class="label">Wind RMS</td>
+          <td class="units"> mph</td>
+          <td class="data new_row">0</td>
+          <td class="data new_row">0</td>
+          <td class="data new_row">0</td>
+          <td class="data new_row">0</td>
+          <td class="data new_row">0</td>
+        </tr>
+
+        <tr>
+          <td class="label">
+            Vector Average<br/>
+            Average Direction
+          </td>
+          <td class="units">
+             mph<br/>
+            &#176;
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359
+          </td>
+          <td class="data new_row">
+            0<br/>
+            359
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">UV Index</td>
+          <td class="units"></td>
+          <td class="data new_row">
+            0.0<br/>
+            <span class="timestamp">07:48:38 PM</span><br/>
+            0.0<br/>
+            <span class="timestamp">07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0.0<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span><br/>
+            0.0<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">
+            0.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            0.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            0.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            0.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">Radiation</td>
+          <td class="units"> W/m&#178;</td>
+          <td class="data new_row">
+            0<br/>
+            <span class="timestamp">07:48:38 PM</span><br/>
+            0<br/>
+            <span class="timestamp">07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span><br/>
+            0<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">
+            0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span><br/>
+            0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">Inside Temperature</td>
+          <td class="units">&#176;F</td>
+          <td class="data new_row">
+            95.3<br/>
+            <span class="timestamp">08:40:00 PM</span><br/>
+            63.0<br/>
+            <span class="timestamp">07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            95.3<br/>
+            <span class="timestamp">08:40:00 PM (Tuesday)</span><br/>
+            63.0<br/>
+            <span class="timestamp">07:48:38 PM (Tuesday)</span>
+          </td>
+          <td class="data new_row">
+            95.3<br/>
+            <span class="timestamp">10/15/2019 08:40:00 PM</span><br/>
+            63.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            95.3<br/>
+            <span class="timestamp">10/15/2019 08:40:00 PM</span><br/>
+            63.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+          <td class="data new_row">
+            95.3<br/>
+            <span class="timestamp">10/15/2019 08:40:00 PM</span><br/>
+            63.0<br/>
+            <span class="timestamp">10/15/2019 07:48:38 PM</span>
+          </td>
+        </tr>
+
+
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+      </div>
+
+
+<div id='identifier_widget' class="widget">
+  <div class="widget_title">
+  </div>
+  <div class="widget_contents">
+  <table>
+    <tr>
+      <td class="label">Latitude</td>
+      <td class="data">44&deg; 55.01' N</td>
+    </tr>
+    <tr>
+      <td class="label">Longitude</td>
+      <td class="data">083&deg; 32.02' W</td>
+    </tr>
+    <tr>
+      <td class="label">Altitude</td>
+      <td class="data">25 feet</td>
+    </tr>
+    <tr>
+      <td class="label">WeeWX</td>
+      <td class="data">3.9.2</td>
+    </tr>
+  </table>
+  </div>
+
+</div>
+    </div>
+
+  </body>
+</html>
